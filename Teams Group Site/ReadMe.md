@@ -21,4 +21,4 @@ A simple template of Teams site.
     - Famous Contents
 
 # Image
-!["aaa"](https://avatars1.githubusercontent.com/u/43107994?s=60&v=4 "Title")
+!["Image"](https://github.com/MickNabewata/spo-site-templates/blob/images/Teams%20Group%20Site/1.png "Image")
