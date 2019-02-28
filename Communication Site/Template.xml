@@ -14,10 +14,6 @@
             <pnp:NavigationNode Title="ニュース" Url="{site}/_layouts/15/news.aspx?title=ニュース" IsExternal="true" />
             <pnp:NavigationNode Title="イベント" Url="{site}/_layouts/15/Events.aspx" IsExternal="true" />
             <pnp:NavigationNode Title="ドキュメント" Url="{site}/Shared Documents/Forms/AllItems.aspx" />
-            <pnp:NavigationNode Title="外部リンク" Url="" IsExternal="true">
-              <pnp:NavigationNode Title="Teams" Url="https://teams.microsoft.com/" IsExternal="true" />
-              <pnp:NavigationNode Title="Planner" Url="https://tasks.office.com" IsExternal="true" />
-              <pnp:NavigationNode Title="OneNote" Url="{site}/SiteAssets/全社ポータル Notebook" />
             </pnp:NavigationNode>
           </pnp:StructuralNavigation>
         </pnp:CurrentNavigation>
