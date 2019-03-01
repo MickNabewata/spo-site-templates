@@ -5,4 +5,4 @@ SharePoint site templates written by PnP Provisioning Schemas.
 |Template|About|
 ---|---
 |[Teams Group Site](Teams%20Group%20Site/ReadMe.md)|Simple template of Teams site.
-|[Communication Site](CommunicationSite/ReadMe.md)|Simple template of Communication site.
+|[Communication Site](Communication Site/ReadMe.md)|Simple template of Communication site.
