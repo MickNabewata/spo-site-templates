@@ -1,6 +1,8 @@
 # Communication Site
 A simple template of Communication site.  
-  
+For Japanese, check my blog.  
+[鍋綿ブログ](https://www.micknabewata.com/entry/sharepoint/communicationSiteTemplate)  
+
 # Functions
 - Navigations
     - News

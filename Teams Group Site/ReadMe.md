@@ -1,6 +1,8 @@
 # Teams Group Site
 A simple template of Teams site.  
-  
+For Japanese, check my blog.  
+[鍋綿ブログ](https://www.micknabewata.com/entry/sharepoint/teamsSiteTemplate)  
+
 # Functions
 - Navigations
     - News
