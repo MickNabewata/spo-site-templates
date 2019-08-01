@@ -1,24 +1,23 @@
-# Communication Site
-A simple template of Communication site.  
-For Japanese, check my blog.  
+# コミュニケーションサイト
+コミュニケーションサイトを利用したシンプルなポータルサイトテンプレートです。  
+弊ブログでも紹介しております。  
 [鍋綿ブログ](https://www.micknabewata.com/entry/sharepoint/communicationSiteTemplate)  
 
-# Functions
-- Navigations
-    - News
-    - Events
-    - Documents
-    - External Link
-        - Teams
-        - Planner
-        - OneNote
-- Home Page
-    - News
-    - Links
-    - Events
-    - Documents
-    - Hub News
-    - Famous Contents
+# 機能一覧
+- ナビゲーション
+    - ホーム
+    - ニュース
+    - イベント
+    - ドキュメント
+- ホームページ
+    - ニュース
+    - リンク集
+    - イベント
+    - ドキュメント
+    - 天気
+    - ハブのニュース
+    - 人気のコンテンツ
+- フッター
 
-# Image
-!["Image"](https://github.com/MickNabewata/spo-site-templates/blob/images/Communication%20Site/1.png "Image")
+# サイトのイメージ
+!["サイトのイメージ"](https://github.com/MickNabewata/spo-site-templates/blob/images/Communication%20Site/1.png "サイトのイメージ")

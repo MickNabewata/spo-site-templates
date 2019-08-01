@@ -1,0 +1,251 @@
+﻿<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.11.1907.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-00817043D3A642B2AE57B1A7B5BF699B">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-00817043D3A642B2AE57B1A7B5BF699B" Version="1" BaseSiteTemplate="STS#3" Scope="RootSite">
+      <pnp:WebSettings NoCrawl="false" WelcomePage="SitePages/Home.aspx" QuickLaunchEnabled="false" />
+      <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="21" FirstDayOfWeek="Sunday" FirstWeekOfYear="0" LocaleId="1041" ShowWeeks="false" Time24="true" TimeZone="20" WorkDayEndHour="6:00PM" WorkDays="62" WorkDayStartHour="9:00AM" />
+      <pnp:PropertyBagEntries>
+        <pnp:PropertyBagEntry Key="ThemePrimary" Value="#03787C" Overwrite="false" Indexed="true" />
+      </pnp:PropertyBagEntries>
+      <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
+        <pnp:GlobalNavigation NavigationType="Structural">
+          <pnp:StructuralNavigation RemoveExistingNodes="true" />
+        </pnp:GlobalNavigation>
+        <pnp:CurrentNavigation NavigationType="StructuralLocal">
+          <pnp:StructuralNavigation RemoveExistingNodes="true">
+            <pnp:NavigationNode Title="ホーム" Url="{site}" />
+            <pnp:NavigationNode Title="ニュース" Url="{site}/_layouts/15/news.aspx?title=ITニュース" IsExternal="true" />
+            <pnp:NavigationNode Title="イベント" Url="{site}/_layouts/15/Events.aspx?ListGuid={listid:イベント}" IsExternal="true" />
+            <pnp:NavigationNode Title="QA" Url="{site}/Lists/QA" />
+            <pnp:NavigationNode Title="規程・規約" Url="{site}/Lists/Rules" />
+            <pnp:NavigationNode Title="ドキュメント" Url="{site}/Documents" />
+            <pnp:NavigationNode Title="メンバー用" Url="{site}" IsExternal="true">
+              <pnp:NavigationNode Title="メール" Url="https://outlook.office365.com/owa" IsExternal="true" />
+              <pnp:NavigationNode Title="予定表" Url="https://outlook.office.com/calendar/" IsExternal="true" />
+              <pnp:NavigationNode Title="Teams" Url="https://teams.microsoft.com" IsExternal="true" />
+              <pnp:NavigationNode Title="Teamsファイル" Url="{site}/Shared Documents" />
+              <pnp:NavigationNode Title="Planner" Url="{site}/_layouts/15/groupstatus.aspx?id={sitecollectionconnectedoffice365groupid}&amp;target=planner" IsExternal="true" />
+              <pnp:NavigationNode Title="OneNote" Url="{site}/_layouts/15/groupstatus.aspx?id={sitecollectionconnectedoffice365groupid}&amp;target=notebook" IsExternal="true" />
+              <pnp:NavigationNode Title="Stream" Url="https://web.microsoftstream.com/group/{sitecollectionconnectedoffice365groupid}" IsExternal="true" />
+            </pnp:NavigationNode>
+            <pnp:NavigationNode Title="ニュース" Url="{site}/_layouts/15/News.aspx" IsExternal="true" />
+          </pnp:StructuralNavigation>
+        </pnp:CurrentNavigation>
+      </pnp:Navigation>
+      <pnp:SiteFields>
+        <Field Type="Note" DisplayName="本文" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="4" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" Sortable="FALSE" Group="ユーザー設定の列" IMEMode="inactive" ID="{839fd60b-a486-4fde-a62b-4e90cae0c7ec}" SourceID="{71268207-a3a0-4904-92f7-b5db143f41c3}" StaticName="Contents" Name="Contents" CustomFormatter="" RestrictedMode="TRUE" AppendOnly="FALSE" UnlimitedLengthInDocumentLibrary="FALSE"></Field>
+        <Field Type="Note" DisplayName="回答" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="4" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" Sortable="FALSE" Group="ユーザー設定の列" IMEMode="inactive" ID="{74752d53-ed56-4125-bf05-f13aa73d1421}" SourceID="{71268207-a3a0-4904-92f7-b5db143f41c3}" StaticName="Answer" Name="Answer" CustomFormatter="" RestrictedMode="TRUE" AppendOnly="FALSE" UnlimitedLengthInDocumentLibrary="FALSE"></Field>
+      </pnp:SiteFields>
+      <pnp:ContentTypes>
+        <pnp:ContentType ID="0x01000DD5919E22A1714C89D3CA540AB734E1" Name="QA" Description="" Group="ユーザー設定のコンテンツ タイプ" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="74752d53-ed56-4125-bf05-f13aa73d1421" Name="Answer" UpdateChildren="false" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x010065A3A08C45DBCA49B39EF1E0E0F4FC45" Name="規程・規約" Description="" Group="ユーザー設定のコンテンツ タイプ" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="839fd60b-a486-4fde-a62b-4e90cae0c7ec" Name="Contents" Required="true" UpdateChildren="false" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x0101009D1CB255DA76424F860D91F20E6C4118006FD539B840E97643A65D3091A4034476" Name="ニュース" Description="" Group="ユーザー設定のコンテンツ タイプ" NewFormUrl="" EditFormUrl="" DisplayFormUrl="" />
+      </pnp:ContentTypes>
+      <pnp:Lists>
+        <pnp:ListInstance Title="QA" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/QA" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" DefaultDisplayFormUrl="{site}/Lists/QA/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/QA/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/QA/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01000DD5919E22A1714C89D3CA540AB734E1" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{7231CD37-6986-42BE-92CC-4109AF061E3F}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="QA一覧" Url="{site}/Lists/QA/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="Created" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <CustomFormatter><![CDATA[{
+  "schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+  "hideSelection": true,
+  "hideColumnHeader": true,
+  "rowFormatter": {
+    "elmType": "div",
+    "style": {
+      "border-bottom": "1px solid lightgray",
+      "padding": "5px 0px"
+    },
+    "children": [
+      {
+        "elmType": "button",
+        "attributes": {
+          "class": "ms-fontSize-xl"
+        },
+        "style": {
+          "line-height": "1.5em",
+          "border": "0",
+          "padding": "0px",
+          "color": "#0077ff",
+          "background-color": "transparent",
+          "cursor": "pointer"
+        },
+        "txtContent": "[$Title]",
+        "customRowAction": {
+          "action": "defaultClick"
+        }
+      }
+    ]
+  }
+}]]></CustomFormatter>
+            </View>
+          </pnp:Views>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Teamsファイル" Description="" DocumentTemplate="{site}/Shared Documents/Forms/template.dotx" OnQuickLaunch="true" TemplateType="101" Url="Shared Documents" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" ListExperience="NewExperience" DefaultDisplayFormUrl="{site}/Shared Documents/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/Shared Documents/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/Shared Documents/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{8430F011-EC1D-428F-8B7C-3164EEFBB89E}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="ドキュメント一覧" Url="{site}/Shared Documents/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+            </View>
+          </pnp:Views>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="イベント" Description="" DocumentTemplate="" TemplateType="106" Url="Events" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-ec85-4903-972d-ebe475780106" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Events/DispForm.aspx" DefaultEditFormUrl="{site}/Events/EditForm.aspx" DefaultNewFormUrl="{site}/Events/NewForm.aspx" ImageUrl="/_layouts/15/images/itevent.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="" />
+        <pnp:ListInstance Title="ドキュメント" Description="" DocumentTemplate="{site}/Documents/Forms/template.dotx" TemplateType="101" Url="Documents" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/Documents/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/Documents/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/Documents/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:PropertyBagEntries>
+            <pnp:PropertyBagEntry Key="IsAttachmentLibrary" Value="0" Overwrite="false" />
+          </pnp:PropertyBagEntries>
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{E5422994-866C-4FCD-B027-1B7C8A27CAD4}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="ドキュメント一覧" Url="{site}/Documents/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="ニュース" Description="" DocumentTemplate="" TemplateType="119" Url="SitePages" EnableVersioning="true" EnableMinorVersions="true" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="1" TemplateFeatureID="00bfea71-c796-4402-9f2f-0eb9a6e71b18" ContentTypesEnabled="true" EnableAttachments="false" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/SitePages/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SitePages/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SitePages/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="true" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118006FD539B840E97643A65D3091A4034476" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118002A50BFCFB7614729B56886FADA02339B" />
+            <pnp:ContentTypeBinding ContentTypeID="0x010108" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01010901" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{5F47373C-8301-4E77-955E-04840E56A5B9}" DefaultView="TRUE" Type="HTML" DisplayName="ニュース一覧" Url="{site}/SitePages/Forms/AllPages.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="Modified" Ascending="FALSE" />
+                </OrderBy>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="ContentType" />
+                    <Value Type="Computed">ニュース</Value>
+                  </Eq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="_UIVersionString" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+            </View>
+          </pnp:Views>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="規程・規約" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Rules" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" DefaultDisplayFormUrl="{site}/Lists/Rules/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Rules/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Rules/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x010065A3A08C45DBCA49B39EF1E0E0F4FC45" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{FE0798A9-F53B-4FA6-89F9-F80B11F41DAB}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="規程・規約一覧" Url="{site}/Lists/Rules/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="Title" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Contents" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+            </View>
+          </pnp:Views>
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="ホーム">
+            <pnp:Sections>
+                <pnp:Section Order="1" Type="TwoColumnLeft">
+                    <pnp:Controls>
+                        <pnp:CanvasControl WebPartType="NewsReel" JsonControlData="{&quot;id&quot;: &quot;8c88f208-6c77-4bdb-86a0-0c47b4316588&quot;, &quot;instanceId&quot;: &quot;5b9987c6-46d3-4e73-9813-ba9e729ea6dc&quot;, &quot;title&quot;: &quot;ニュース&quot;, &quot;description&quot;: &quot;最新ニュースを表示します。&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;carouselSettings&quot;:{&quot;autoplay&quot;:true,&quot;autoplaySpeed&quot;:5,&quot;dots&quot;:true,&quot;lazyLoad&quot;:true,&quot;metadata&quot;:true,&quot;swipe&quot;:true,&quot;useStockItems&quot;:false},&quot;showChrome&quot;:true,&quot;showSocialActions&quot;:true,&quot;layoutId&quot;:&quot;NewsHub&quot;,&quot;prefetchCount&quot;:12,&quot;filters&quot;:[{&quot;filterType&quot;:1,&quot;value&quot;:&quot;&quot;,&quot;values&quot;:[]}],&quot;newsDataSourceProp&quot;:1,&quot;dataProviderId&quot;:&quot;news&quot;,&quot;newsSiteList&quot;:[],&quot;renderItemsSliderValue&quot;:4,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;pinnedItems&quot;:[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],&quot;templateId&quot;:&quot;NewsHub&quot;,&quot;propsLastEdited&quot;:&quot;2019-08-01T02:10:42.774Z&quot;,&quot;compactMode&quot;:false,&quot;audienceTargetingEnabled&quot;:false,&quot;serializedFilterQuery&quot;:&quot;&lt;Where&gt;&lt;Eq&gt;&lt;FieldRef Name=\&quot;FSObjType\&quot; /&gt;&lt;Value Type=\&quot;Integer\&quot;&gt;0&lt;/Value&gt;&lt;/Eq&gt;&lt;/Where&gt;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;ITニュース&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;0d8d5f97-0b3c-4ebc-91fc-194b69092eec&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8c88f208-6c77-4bdb-86a0-0c47b4316588" Order="1" Column="1" />
+                        <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;id&quot;: &quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;, &quot;instanceId&quot;: &quot;25dcc579-b1e5-43c7-91a1-a59b752caaa4&quot;, &quot;title&quot;: &quot;クイック リンク&quot;, &quot;description&quot;: &quot;重要なドキュメントとページに対するリンクを追加します。&quot;, &quot;dataVersion&quot;: &quot;2.2&quot;, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:3,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;feedbackrequestsolid&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:2,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;market&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:1,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;editnote&quot;}}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;Waffle&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:2,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:2},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:0,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;リンク集&quot;,&quot;items[0].title&quot;:&quot;申請&quot;,&quot;items[1].title&quot;:&quot;社内ITロードマップ&quot;,&quot;items[2].title&quot;:&quot;ご意見箱&quot;,&quot;items[0].description&quot;:&quot;&quot;,&quot;items[1].description&quot;:&quot;&quot;,&quot;items[2].description&quot;:&quot;&quot;,&quot;items[0].altText&quot;:&quot;&quot;,&quot;items[1].altText&quot;:&quot;&quot;,&quot;items[2].altText&quot;:&quot;&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;https://google.co.jp&quot;,&quot;items[1].sourceItem.url&quot;:&quot;https://google.co.jp&quot;,&quot;items[2].sourceItem.url&quot;:&quot;https://google.co.jp&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="1" Column="2" />
+                        <pnp:CanvasControl WebPartType="Events" JsonControlData="{&quot;id&quot;: &quot;20745d7d-8581-4a6c-bf26-68279bc123fc&quot;, &quot;instanceId&quot;: &quot;5937ba0c-dc38-4a34-b465-b3d4226ec875&quot;, &quot;title&quot;: &quot;イベント&quot;, &quot;description&quot;: &quot;今後のイベントを表示します&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;selectedListId&quot;:&quot;{listid:イベント}&quot;,&quot;selectedCategory&quot;:&quot;&quot;,&quot;dateRangeOption&quot;:0,&quot;startDate&quot;:&quot;&quot;,&quot;endDate&quot;:&quot;&quot;,&quot;isOnSeeAllPage&quot;:false,&quot;layout&quot;:&quot;Filmstrip&quot;,&quot;dataSource&quot;:7,&quot;sites&quot;:[],&quot;maxItemsPerPage&quot;:3,&quot;layoutId&quot;:&quot;Flex&quot;,&quot;dataProviderId&quot;:&quot;Event&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;イベント&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;0447e11d-bed9-4898-b600-8dbcd95e9cc2&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="20745d7d-8581-4a6c-bf26-68279bc123fc" Order="2" Column="2" />
+                    </pnp:Controls>
+                </pnp:Section>
+                <pnp:Section Order="2" Type="OneColumn" BackgroundEmphasis="Soft">
+                    <pnp:Controls>
+                        <pnp:CanvasControl WebPartType="List" JsonControlData="{&quot;id&quot;: &quot;f92bf067-bc19-489e-a556-7fe95f508720&quot;, &quot;instanceId&quot;: &quot;6e35f956-8994-4f19-84fb-69c761976acd&quot;, &quot;title&quot;: &quot;ドキュメント ライブラリ&quot;, &quot;description&quot;: &quot;ドキュメント ライブラリを追加します&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;isDocumentLibrary&quot;:true,&quot;selectedListId&quot;:&quot;{listid:ドキュメント}&quot;,&quot;selectedListUrl&quot;:&quot;{site}/Documents&quot;,&quot;webRelativeListUrl&quot;:&quot;/Documents&quot;,&quot;webpartHeightKey&quot;:1,&quot;selectedViewId&quot;:&quot;{viewid:ドキュメント,ドキュメント一覧}&quot;,&quot;selectedFolderPath&quot;:&quot;&quot;,&quot;hideCommandBar&quot;:true}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;listTitle&quot;:&quot;ドキュメント&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="f92bf067-bc19-489e-a556-7fe95f508720" Order="1" Column="1" />
+                    </pnp:Controls>
+                </pnp:Section>
+                <pnp:Section Order="3" Type="TwoColumn">
+                    <pnp:Controls>
+                        <pnp:CanvasControl WebPartType="List" JsonControlData="{&quot;id&quot;: &quot;f92bf067-bc19-489e-a556-7fe95f508720&quot;, &quot;instanceId&quot;: &quot;5273f021-4439-41fa-b74f-9cc92c9f214b&quot;, &quot;title&quot;: &quot;リスト&quot;, &quot;description&quot;: &quot;リストの追加&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;isDocumentLibrary&quot;:false,&quot;selectedListId&quot;:&quot;{listid:QA}&quot;,&quot;selectedListUrl&quot;:&quot;{site}/Lists/QA&quot;,&quot;webRelativeListUrl&quot;:&quot;/Lists/QA&quot;,&quot;webpartHeightKey&quot;:1,&quot;selectedViewId&quot;:&quot;{viewid:QA,QA一覧}&quot;,&quot;selectedFolderPath&quot;:&quot;&quot;,&quot;hideCommandBar&quot;:true}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;listTitle&quot;:&quot;QA&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="f92bf067-bc19-489e-a556-7fe95f508720" Order="1" Column="1" />
+                        <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;893a257e-9c92-49bc-8a36-2f6bb058da34&quot;, &quot;instanceId&quot;: &quot;34306c46-c75f-415c-952e-370446a2c980&quot;, &quot;title&quot;: &quot;RSS&quot;, &quot;description&quot;: &quot;グループのための RSS フィードを受け取ります&quot;, &quot;dataVersion&quot;: &quot;1.1&quot;, &quot;properties&quot;: {&quot;name&quot;:&quot;RSS&quot;,&quot;guid&quot;:&quot;c18f658e-c34a-4ee8-ad19-a2cd51e59b71&quot;,&quot;useAngularUrl&quot;:true,&quot;maxItemsPerPage&quot;:1,&quot;configurationId&quot;:&quot;34306c46-c75f-415c-952e-370446a2c980&quot;,&quot;groupAddress&quot;:&quot;&quot;,&quot;profiles&quot;:[],&quot;layoutId&quot;:&quot;ConnectorCard&quot;,&quot;dataProviderId&quot;:&quot;Connector&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;originalPageId&quot;:1}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;RSS&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="893a257e-9c92-49bc-8a36-2f6bb058da34" Order="1" Column="2" />
+                    </pnp:Controls>
+                </pnp:Section>
+                <pnp:Section Order="4" Type="OneColumn" BackgroundEmphasis="Soft">
+                    <pnp:Controls>
+                        <pnp:CanvasControl WebPartType="VideoEmbed" JsonControlData="{&quot;id&quot;: &quot;275c0095-a77e-4f6d-a2a0-6a7626911518&quot;, &quot;instanceId&quot;: &quot;8967720e-6131-417d-8c9a-36713618f4e8&quot;, &quot;title&quot;: &quot;Stream&quot;, &quot;description&quot;: &quot;Stream のビデオやチャネルを表示します&quot;, &quot;dataVersion&quot;: &quot;1.1&quot;, &quot;properties&quot;: {&quot;showInfo&quot;:false,&quot;embedCode&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;475\&quot; src=\&quot;https://web.microsoftstream.com/embed/browse?app=SPO&amp;displayMode=buttons&amp;showDescription=true&amp;sort=trending\&quot; frameborder=\&quot;0\&quot; allowfullscreen&gt;&lt;/iframe&gt;&quot;,&quot;isStream&quot;:true,&quot;showvideoStart&quot;:false,&quot;videoStartAt&quot;:&quot;&quot;,&quot;channelSortBy&quot;:&quot;trending&quot;,&quot;thumbnailUrl&quot;:&quot;&quot;,&quot;videoStartTimeCheck&quot;:false,&quot;videoStartTime&quot;:&quot;&quot;,&quot;browseSortBy&quot;:&quot;trending&quot;,&quot;browseFilterTerm&quot;:&quot;&quot;,&quot;sourceSelect&quot;:&quot;BROWSE&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;IT関連動画&quot;,&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;videoSource&quot;:&quot;https://web.microsoftstream.com/embed/browse&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="275c0095-a77e-4f6d-a2a0-6a7626911518" Order="1" Column="1" />
+                    </pnp:Controls>
+                </pnp:Section>
+                <pnp:Section Order="5" Type="OneColumn">
+                    <pnp:Controls>
+                        <pnp:CanvasControl WebPartType="People" JsonControlData="{&quot;id&quot;: &quot;7f718435-ee4d-431c-bdbf-9c4ff326f46e&quot;, &quot;instanceId&quot;: &quot;6397ef7a-3a24-4ac4-89bd-deeeab930ab4&quot;, &quot;title&quot;: &quot;ユーザー&quot;, &quot;description&quot;: &quot;選択したユーザーとユーザー プロファイルを表示します&quot;, &quot;dataVersion&quot;: &quot;1.3&quot;, &quot;properties&quot;: {&quot;layout&quot;:1,&quot;persons&quot;:[]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;お問い合わせ先&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="7f718435-ee4d-431c-bdbf-9c4ff326f46e" Order="1" Column="1" />
+                    </pnp:Controls>
+                </pnp:Section>
+            </pnp:Sections>
+            <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
+            <pnp:Security>
+                <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+            </pnp:Security>
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+      <pnp:Header Layout="Compact" BackgroundEmphasis="Soft" />
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

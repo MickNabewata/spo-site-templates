@@ -1,26 +1,25 @@
-# Teams Group Site
-A simple template of Teams site.  
-For Japanese, check my blog.  
+# チームサイト
+Teamsに接続されたSharePointサイトを利用したシンプルなポータルサイトテンプレートです。  
+弊ブログでも紹介しております。  
 [鍋綿ブログ](https://www.micknabewata.com/entry/sharepoint/teamsSiteTemplate)  
 
-# Functions
-- Navigations
-    - News
-    - Events
-    - Documents
-    - External Link
-        - Conversations
+# 機能一覧
+- ナビゲーション
+    - ニュース
+    - イベント
+    - Teamsファイル
+    - 外部リンク
+        - グループメール
         - Teams
         - Planner
         - OneNote
-- Home Page
-    - News
-    - Events
-    - Planner
-    - Documents
-    - OneNote
-    - Hub News
-    - Famous Contents
+- ホームページ
+    - ニュース
+    - イベント
+    - Plannerタスク
+    - Teamsファイル
+    - 人気のOneNoteセクション
+    - ハブのニュース
 
-# Image
-!["Image"](https://github.com/MickNabewata/spo-site-templates/blob/images/Teams%20Group%20Site/1.png "Image")
+# サイトのイメージ
+!["サイトのイメージ"](https://github.com/MickNabewata/spo-site-templates/blob/images/Teams%20Group%20Site/1.png "サイトのイメージ")
