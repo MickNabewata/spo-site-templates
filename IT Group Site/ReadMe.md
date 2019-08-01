@@ -29,4 +29,4 @@ Teamsに接続されたサイトに適用することができます。
     - お問い合わせ先
 
 # サイトのイメージ
-!["サイトのイメージ"](https://github.com/MickNabewata/spo-site-templates/blob/images/IT%20Group%20Site/1.png "サイトのイメージ")
+!["サイトのイメージ"](https://github.com/MickNabewata/spo-site-templates/blob/images/IT%20Group%20Site/2.png "サイトのイメージ")
