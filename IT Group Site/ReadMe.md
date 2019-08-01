@@ -1,6 +1,6 @@
 # IT部門サイト
 IT部門での利用をイメージしたシンプルなポータルサイトテンプレートです。  
-Teamsに接続されたサイトに適用することができます。
+Teamsに接続されたサイトに適用することができます。  
 [鍋綿ブログ](https://www.micknabewata.com/entry/sharepoint/itSiteTemplate)  
 
 # 機能一覧
