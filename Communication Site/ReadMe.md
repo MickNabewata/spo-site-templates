@@ -3,6 +3,9 @@
 弊ブログでも紹介しております。  
 [鍋綿ブログ](https://www.micknabewata.com/entry/sharepoint/communicationSiteTemplate)  
 
+このテンプレートは私が公開しているツールで任意のサイトに適用可能です。  
+[SPOTemplateInstaller](https://github.com/MickNabewata/SPOTemplateInstaller)  
+
 # 機能一覧
 - ナビゲーション
     - ホーム
