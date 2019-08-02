@@ -3,6 +3,9 @@ IT部門での利用をイメージしたシンプルなポータルサイトテ
 Teamsに接続されたサイトに適用することができます。  
 [鍋綿ブログ](https://www.micknabewata.com/entry/sharepoint/itSiteTemplate)  
 
+このテンプレートは私が公開しているツールで任意のサイトに適用可能です。  
+[SPOTemplateInstaller](https://github.com/MickNabewata/SPOTemplateInstaller)  
+
 # 機能一覧
 - ナビゲーション
     - ニュース
