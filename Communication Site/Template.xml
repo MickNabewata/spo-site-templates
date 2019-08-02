@@ -14,7 +14,6 @@
             <pnp:NavigationNode Title="ニュース" Url="{site}/_layouts/15/news.aspx?title=ニュース" IsExternal="true" />
             <pnp:NavigationNode Title="イベント" Url="{site}/_layouts/15/Events.aspx" IsExternal="true" />
             <pnp:NavigationNode Title="ドキュメント" Url="{site}/Shared Documents/Forms/AllItems.aspx" />
-            </pnp:NavigationNode>
           </pnp:StructuralNavigation>
         </pnp:CurrentNavigation>
       </pnp:Navigation>
